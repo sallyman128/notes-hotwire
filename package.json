@@ -6,8 +6,8 @@
   },
   "lint-staged": {
     "*.rb": "bundle exec rubocop -a",
-    "*.erb": "bundle exec erblint --lint-all",
-    "*.{js,json,css,scss}": "prettier --write"
+    "*.{js,json,css,scss}": "prettier --write",
+    "*.erb": "bundle exec erb_lint --lint-all"
   },
   "scripts": {
     "prepare": "husky install"
