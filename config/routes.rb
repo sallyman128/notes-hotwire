@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resource :session
+  resource :session, only: [ :new, :create, :destroy ]
+  delete "/logout", to: "sessions#destroy", as: :logout
   resources :passwords, param: :token
   resources :users, only: %i[index]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
