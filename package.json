@@ -5,7 +5,7 @@
     "prettier": "^3.5.3"
   },
   "lint-staged": {
-    "*.rb": "bundle exec rubocop --force-exclusion",
+    "*.rb": "bundle exec rubocop -a",
     "*.erb": "bundle exec erblint --lint-all",
     "*.{js,json,css,scss}": "prettier --write"
   },
